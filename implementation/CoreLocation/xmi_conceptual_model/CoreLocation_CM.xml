@@ -385,7 +385,7 @@
 					</attribute>
 					<attribute xmi:idref="EAID_FEB6E329_1401_4762_A0B5_E177BC0ADE97" name="locn:geographicName" scope="Public">
 						<initial/>
-						<documentation value="A description for a Location.	"/>
+						<documentation value="A tewtual description for a Location.	"/>
 						<model ea_localid="27" ea_guid="{FEB6E329-1401-4762-A0B5-E177BC0ADE97}"/>
 						<properties type="rdf:langString" collection="false" static="0" duplicates="0" changeability="changeable"/>
 						<coords ordered="0"/>
