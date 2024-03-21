@@ -4,7 +4,7 @@ on:
     branches:
       - "**"
     paths:
-      - "implementation/CoreLocation/xmi_conceptual_model/core_location_CM.xml"
+      - "implementation/CoreLocation/xmi_conceptual_model/CoreLocation_CM.xml"
 jobs:
   report_and_glossary:
     runs-on: ubuntu-latest
