@@ -1,0 +1,160 @@
+@prefix at-voc: <http://publications.europa.eu/resource/authority/> .
+@prefix cccev: <http://data.europa.eu/m8g/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix person: <http://www.w3.org/ns/person#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cccev:adminUnit rdfs:domain locn:Address ;
+    rdfs:range cccev:AdminUnit .
+
+cccev:clv-restriction a owl:Ontology ;
+    rdfs:label "Core Location Vocabulary - core restrictions"@en ;
+    dcterms:created "2021-06-01"^^xsd:date ;
+    dcterms:description "The Core Location Vocabulary core restrictions provides the restrictions and the inference-related specifications on the concepts and properties in the Core Location Vocabulary core."@en ;
+    dcterms:issued "2024-03-21"^^xsd:date ;
+    dcterms:license "© European Union, 2014. Unless otherwise noted, the reuse of the Ontology is authorised under the European Union Public Licence v1.2 (https://eupl.eu/)." ;
+    dcterms:publisher "http://publications.europa.eu/resource/authority/corporate-body/PUBL" ;
+    dcterms:title "Core Location Vocabulary - core restrictions"@en ;
+    vann:preferredNamespacePrefix "cv" ;
+    vann:preferredNamespaceUri "http://data.europa.eu/m8g/ontology#" ;
+    rdfs:comment """This version is automatically generated from CoreLocation_CM.xml on 
+                2024-03-21""" ;
+    rdfs:seeAlso <https://semiceu.github.io/CCCEV/releases/2.00/> ;
+    owl:imports cccev:,
+        cccev:clv,
+        at-voc:,
+        dcterms:,
+        <http://www.opengis.net/ont/geosparql>,
+        <http://www.w3.org/2004/02/skos/core>,
+        <http://www.w3.org/2006/time>,
+        <http://www.w3.org/ns/adms>,
+        <http://www.w3.org/ns/locn>,
+        org:,
+        <http://www.w3.org/ns/person>,
+        foaf:,
+        <https://data.europa.eu/m8g/>,
+        <https://www.w3.org/1999/xhtml/vocab>,
+        <https://www.w3.org/ns/prov> ;
+    owl:incompatibleWith "3.1.0" ;
+    owl:priorVersion "http://data.europa.eu/m8g/clv-restriction-3.1.0" ;
+    owl:versionIRI cccev:clv-restriction-4.0.0 ;
+    owl:versionInfo "4.0.0" .
+
+cccev:coordinates rdfs:domain locn:Geometry ;
+    rdfs:range xsd:string .
+
+cccev:crs rdfs:domain locn:Geometry ;
+    rdfs:range xsd:anyURI .
+
+cccev:domicile rdfs:domain cccev:Person ;
+    rdfs:range locn:Address .
+
+cccev:latitude rdfs:domain locn:Geometry ;
+    rdfs:range xsd:string .
+
+cccev:longitude rdfs:domain locn:Geometry ;
+    rdfs:range xsd:string .
+
+cccev:registeredAddress rdfs:domain rdfs:Resource ;
+    rdfs:range locn:Address .
+
+geo:asGML rdfs:domain locn:Geometry ;
+    rdfs:range rdfs:Literal .
+
+geo:asWKT rdfs:domain locn:Geometry ;
+    rdfs:range rdfs:Literal .
+
+rdfs:seeAlso rdfs:domain dcterms:Location ;
+    rdfs:range xsd:anyURI .
+
+locn:address rdfs:domain [ a owl:Class ;
+            owl:unionOf ( rdfs:Resource cccev:PublicOrganisation ) ] ;
+    rdfs:range locn:Address .
+
+locn:addressArea rdfs:domain locn:Address ;
+    rdfs:range rdf:langString .
+
+locn:addressID rdfs:domain locn:Address ;
+    rdfs:range rdfs:Literal .
+
+locn:adminUnitL1 rdfs:domain locn:Address ;
+    rdfs:range rdf:langString .
+
+locn:adminUnitL2 rdfs:domain locn:Address ;
+    rdfs:range rdf:langString .
+
+locn:fullAddress rdfs:domain locn:Address ;
+    rdfs:range rdf:langString .
+
+locn:geographicName rdfs:domain dcterms:Location ;
+    rdfs:range rdf:langString .
+
+locn:geometry rdfs:domain rdfs:Resource ;
+    rdfs:range locn:Geometry .
+
+locn:location rdfs:domain rdfs:Resource ;
+    rdfs:range dcterms:Location .
+
+locn:locatorDesignator rdfs:domain locn:Address ;
+    rdfs:range rdfs:Literal .
+
+locn:locatorName rdfs:domain locn:Address ;
+    rdfs:range rdf:langString .
+
+locn:poBox rdfs:domain locn:Address ;
+    rdfs:range rdfs:Literal .
+
+locn:postCode rdfs:domain locn:Address ;
+    rdfs:range rdfs:Literal .
+
+locn:postName rdfs:domain locn:Address ;
+    rdfs:range rdf:langString .
+
+locn:thoroughfare rdfs:domain locn:Address ;
+    rdfs:range rdf:langString .
+
+person:countryOfBirth rdfs:domain cccev:Person ;
+    rdfs:range dcterms:Location .
+
+person:countryOfDeath rdfs:domain cccev:Person ;
+    rdfs:range dcterms:Location .
+
+person:placeOfBirth rdfs:domain cccev:Person ;
+    rdfs:range dcterms:Location .
+
+person:placeOfDeath rdfs:domain cccev:Person ;
+    rdfs:range dcterms:Location .
+
+cccev:code a owl:Class ;
+    rdfs:domain cccev:AdminUnit ;
+    rdfs:range skos:Concept ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue cccev:code ;
+            owl:onProperty skos:inScheme ] .
+
+cccev:geometryType a owl:Class ;
+    rdfs:domain locn:Geometry ;
+    rdfs:range skos:Concept ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue cccev:geometryType ;
+            owl:onProperty skos:inScheme ] .
+
+cccev:level a owl:Class ;
+    rdfs:domain cccev:AdminUnit ;
+    rdfs:range skos:Concept ;
+    rdfs:subClassOf skos:Concept ;
+    owl:equivalentClass [ a owl:Restriction ;
+            owl:hasValue cccev:level ;
+            owl:onProperty skos:inScheme ] .
+
