@@ -27,26 +27,26 @@ cpv-shape:adms-Identifier a sh:NodeShape ;
         cpv-shape:adms-Identifier-skos-notation ;
     sh:targetClass adms:Identifier .
 
-cpv-shape:cpv-individual a sh:NodeShape ;
-    rdfs:label "Individual" ;
-    rdfs:comment "A individual human being who may be dead or alive, but not imaginary." ;
+cpv-shape:cpv-Person a sh:NodeShape ;
+    rdfs:label "Person" ;
+    rdfs:comment "A individual human being who may be dead or alive, but not imaginary. &lt;a href= github.com&gt; github &lt;a&gt;" ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
-    sh:property cpv-shape:cpv-individual-cpv-birthDate,
-        cpv-shape:cpv-individual-cpv-contactPoint,
-        cpv-shape:cpv-individual-cpv-deathDate,
-        cpv-shape:cpv-individual-cpv-gender,
-        cpv-shape:cpv-individual-cpv-matronymicName,
-        cpv-shape:cpv-individual-cpv-patronymicName,
-        cpv-shape:cpv-individual-cpv-sex,
-        cpv-shape:cpv-individual-dct-alternative,
-        cpv-shape:cpv-individual-dct-identifier,
-        cpv-shape:cpv-individual-foaf-familyName,
-        cpv-shape:cpv-individual-foaf-givenName,
-        cpv-shape:cpv-individual-foaf-name,
-        cpv-shape:cpv-individual-person-birthName,
-        cpv-shape:cpv-individual-person-citizenship,
-        cpv-shape:cpv-individual-person-residency ;
-    sh:targetClass cccev:individual .
+    sh:property cpv-shape:cpv-Person-cpv-birthDate,
+        cpv-shape:cpv-Person-cpv-contactPoint,
+        cpv-shape:cpv-Person-cpv-deathDate,
+        cpv-shape:cpv-Person-cpv-gender,
+        cpv-shape:cpv-Person-cpv-matronymicName,
+        cpv-shape:cpv-Person-cpv-patronymicName,
+        cpv-shape:cpv-Person-cpv-sex,
+        cpv-shape:cpv-Person-dct-alternative,
+        cpv-shape:cpv-Person-dct-identifier,
+        cpv-shape:cpv-Person-foaf-familyName,
+        cpv-shape:cpv-Person-foaf-givenName,
+        cpv-shape:cpv-Person-foaf-name,
+        cpv-shape:cpv-Person-person-birthName,
+        cpv-shape:cpv-Person-person-citizenship,
+        cpv-shape:cpv-Person-person-residency ;
+    sh:targetClass cccev:Person .
 
 cpv-shape:cv-ContactPoint a sh:NodeShape ;
     rdfs:label "Contact point" ;
@@ -91,7 +91,7 @@ cpv-shape:adms-Identifier-adms-schemeAgency a sh:PropertyShape ;
     sh:path adms:schemeAgency .
 
 cpv-shape:adms-Identifier-cpv-identifies a sh:PropertyShape ;
-    sh:class cccev:individual ;
+    sh:class cccev:Person ;
     sh:description "The entity that is referenced by the Identifier." ;
     sh:name "Identifies" ;
     sh:path cccev:identifies ;
@@ -130,100 +130,100 @@ cpv-shape:adms-Identifier-skos-notation a sh:PropertyShape ;
     sh:name "Notation" ;
     sh:path skos:notation .
 
-cpv-shape:cpv-individual-cpv-birthDate a sh:PropertyShape ;
+cpv-shape:cpv-Person-cpv-birthDate a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:description "The point in time on which the Person was born." ;
     sh:name "Birth date" ;
     sh:path cccev:birthDate .
 
-cpv-shape:cpv-individual-cpv-contactPoint a sh:PropertyShape ;
+cpv-shape:cpv-Person-cpv-contactPoint a sh:PropertyShape ;
     sh:class cccev:ContactPoint ;
     sh:description "The main contact information of the resource." ;
     sh:name "Contact point" ;
     sh:path cccev:contactPoint ;
     sh:sparql [ sh:select "SELECT ?this ?that WHERE { ?this <http://data.europa.eu/m8g/contactPoint> ?that . ?that <http://data.europa.eu/m8g/contactPoint> ?this .}" ] .
 
-cpv-shape:cpv-individual-cpv-deathDate a sh:PropertyShape ;
+cpv-shape:cpv-Person-cpv-deathDate a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:description "The point in time on which the Person died." ;
     sh:name "Death date" ;
     sh:path cccev:deathDate .
 
-cpv-shape:cpv-individual-cpv-gender a sh:PropertyShape ;
+cpv-shape:cpv-Person-cpv-gender a sh:PropertyShape ;
     sh:class cccev:gender ;
     sh:description "The identities, expressions and societal roles of the Person." ;
     sh:name "Gender" ;
     sh:path cccev:gender .
 
-cpv-shape:cpv-individual-cpv-matronymicName a sh:PropertyShape ;
+cpv-shape:cpv-Person-cpv-matronymicName a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:datatype rdf:langString ;
     sh:description "Name based on the given name of the Person's mother." ;
     sh:name "Matronymic name" ;
     sh:path cccev:matronymicName .
 
-cpv-shape:cpv-individual-cpv-patronymicName a sh:PropertyShape ;
+cpv-shape:cpv-Person-cpv-patronymicName a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:datatype rdf:langString ;
     sh:description "Name based on the given name of the Person's father." ;
     sh:name "Patronymic name" ;
     sh:path cccev:patronymicName .
 
-cpv-shape:cpv-individual-cpv-sex a sh:PropertyShape ;
+cpv-shape:cpv-Person-cpv-sex a sh:PropertyShape ;
     sh:class cccev:sex ;
     sh:description "The organism's biological sex." ;
     sh:name "Sex" ;
     sh:path cccev:sex .
 
-cpv-shape:cpv-individual-dct-alternative a sh:PropertyShape ;
+cpv-shape:cpv-Person-dct-alternative a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:datatype rdf:langString ;
     sh:description "Any name by which a Person is known, other than their full name." ;
     sh:name "Alternative" ;
     sh:path dcterms:alternative .
 
-cpv-shape:cpv-individual-dct-identifier a sh:PropertyShape ;
+cpv-shape:cpv-Person-dct-identifier a sh:PropertyShape ;
     sh:class adms:Identifier ;
     sh:description "The unambiguous structured reference to the Person." ;
     sh:name "Identifier" ;
     sh:path dcterms:identifier ;
     sh:sparql [ sh:select "SELECT ?this ?that WHERE { ?this <http://purl.org/dc/terms/identifier> ?that . ?that <http://purl.org/dc/terms/identifier> ?this .}" ] .
 
-cpv-shape:cpv-individual-foaf-familyName a sh:PropertyShape ;
+cpv-shape:cpv-Person-foaf-familyName a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:datatype rdf:langString ;
     sh:name "Family name" ;
     sh:path foaf:familyName .
 
-cpv-shape:cpv-individual-foaf-givenName a sh:PropertyShape ;
+cpv-shape:cpv-Person-foaf-givenName a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:datatype rdf:langString ;
     sh:description "The name(s) that identify the Person within a family with a common surname." ;
     sh:name "Given name" ;
     sh:path foaf:givenName .
 
-cpv-shape:cpv-individual-foaf-name a sh:PropertyShape ;
+cpv-shape:cpv-Person-foaf-name a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:datatype rdf:langString ;
     sh:description "The complete name of the Person as one string." ;
     sh:name "Name" ;
     sh:path foaf:name .
 
-cpv-shape:cpv-individual-person-birthName a sh:PropertyShape ;
+cpv-shape:cpv-Person-person-birthName a sh:PropertyShape ;
     rdfs:isDefinedBy cpv-shape:cpv-shape ;
     sh:datatype rdf:langString ;
     sh:description "Full name of the Person given upon their birth." ;
     sh:name "Birth name" ;
     sh:path person:birthName .
 
-cpv-shape:cpv-individual-person-citizenship a sh:PropertyShape ;
+cpv-shape:cpv-Person-person-citizenship a sh:PropertyShape ;
     sh:class dcterms:Jurisdiction ;
     sh:description "The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport." ;
     sh:name "Citizenship" ;
     sh:path person:citizenship ;
     sh:sparql [ sh:select "SELECT ?this ?that WHERE { ?this <http://www.w3.org/ns/person#citizenship> ?that . ?that <http://www.w3.org/ns/person#citizenship> ?this .}" ] .
 
-cpv-shape:cpv-individual-person-residency a sh:PropertyShape ;
+cpv-shape:cpv-Person-person-residency a sh:PropertyShape ;
     sh:class dcterms:Jurisdiction ;
     sh:description "Jurisdiction where the Person has their dwelling." ;
     sh:name "Residency" ;

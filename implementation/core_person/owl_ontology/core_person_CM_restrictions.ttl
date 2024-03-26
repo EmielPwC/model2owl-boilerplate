@@ -14,14 +14,14 @@
 @prefix vann: <http://purl.org/vocab/vann/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-cccev:birthDate rdfs:domain cccev:individual ;
+cccev:birthDate rdfs:domain cccev:Person ;
     rdfs:range cccev:GenericDate .
 
 cccev:contactPage rdfs:domain cccev:ContactPoint ;
     rdfs:range rdf:langString .
 
 cccev:contactPoint rdfs:domain [ a owl:Class ;
-            owl:unionOf ( cccev:individual cccev:PublicOrganisation ) ] ;
+            owl:unionOf ( cccev:Person cccev:PublicOrganisation ) ] ;
     rdfs:range cccev:ContactPoint .
 
 cccev:cpv-restriction a owl:Ontology ;
@@ -57,25 +57,25 @@ cccev:cpv-restriction a owl:Ontology ;
     owl:versionIRI cccev:cpv-restriction-4.0.0 ;
     owl:versionInfo "4.0.0" .
 
-cccev:deathDate rdfs:domain cccev:individual ;
+cccev:deathDate rdfs:domain cccev:Person ;
     rdfs:range cccev:GenericDate .
 
-cccev:domicile rdfs:domain cccev:individual ;
+cccev:domicile rdfs:domain cccev:Person ;
     rdfs:range locn:Address .
 
 cccev:email rdfs:domain cccev:ContactPoint ;
     rdfs:range rdfs:Literal .
 
 cccev:identifies rdfs:domain adms:Identifier ;
-    rdfs:range cccev:individual .
+    rdfs:range cccev:Person .
 
-cccev:matronymicName rdfs:domain cccev:individual ;
+cccev:matronymicName rdfs:domain cccev:Person ;
     rdfs:range rdf:langString .
 
 cccev:openingHours rdfs:domain cccev:ContactPoint ;
     rdfs:range time:TemporalEntity .
 
-cccev:patronymicName rdfs:domain cccev:individual ;
+cccev:patronymicName rdfs:domain cccev:Person ;
     rdfs:range rdf:langString .
 
 cccev:specialOpeningHoursSpecification rdfs:domain cccev:ContactPoint ;
@@ -84,7 +84,7 @@ cccev:specialOpeningHoursSpecification rdfs:domain cccev:ContactPoint ;
 cccev:telephone rdfs:domain cccev:ContactPoint ;
     rdfs:range rdfs:Literal .
 
-dcterms:alternative rdfs:domain cccev:individual ;
+dcterms:alternative rdfs:domain cccev:Person ;
     rdfs:range rdf:langString .
 
 dcterms:conformsTo rdfs:domain adms:Identifier ;
@@ -93,7 +93,7 @@ dcterms:conformsTo rdfs:domain adms:Identifier ;
 dcterms:creator rdfs:domain adms:Identifier ;
     rdfs:range foaf:Agent .
 
-dcterms:identifier rdfs:domain cccev:individual,
+dcterms:identifier rdfs:domain cccev:Person,
         dcterms:Jurisdiction ;
     rdfs:range xsd:anyURI,
         adms:Identifier .
@@ -120,38 +120,38 @@ adms:identifier rdfs:domain cccev:PublicOrganisation ;
 adms:schemeAgency rdfs:domain adms:Identifier ;
     rdfs:range rdf:langString .
 
-person:birthName rdfs:domain cccev:individual ;
+person:birthName rdfs:domain cccev:Person ;
     rdfs:range rdf:langString .
 
-person:citizenship rdfs:domain cccev:individual ;
+person:citizenship rdfs:domain cccev:Person ;
     rdfs:range dcterms:Jurisdiction .
 
-person:countryOfBirth rdfs:domain cccev:individual ;
+person:countryOfBirth rdfs:domain cccev:Person ;
     rdfs:range dcterms:Location .
 
-person:countryOfDeath rdfs:domain cccev:individual ;
+person:countryOfDeath rdfs:domain cccev:Person ;
     rdfs:range dcterms:Location .
 
-person:placeOfBirth rdfs:domain cccev:individual ;
+person:placeOfBirth rdfs:domain cccev:Person ;
     rdfs:range dcterms:Location .
 
-person:placeOfDeath rdfs:domain cccev:individual ;
+person:placeOfDeath rdfs:domain cccev:Person ;
     rdfs:range dcterms:Location .
 
-person:residency rdfs:domain cccev:individual ;
+person:residency rdfs:domain cccev:Person ;
     rdfs:range dcterms:Jurisdiction .
 
-foaf:familyName rdfs:domain cccev:individual ;
+foaf:familyName rdfs:domain cccev:Person ;
     rdfs:range rdf:langString .
 
-foaf:givenName rdfs:domain cccev:individual ;
+foaf:givenName rdfs:domain cccev:Person ;
     rdfs:range rdf:langString .
 
-foaf:name rdfs:domain cccev:individual ;
+foaf:name rdfs:domain cccev:Person ;
     rdfs:range rdf:langString .
 
 cccev:gender a owl:Class ;
-    rdfs:domain cccev:individual ;
+    rdfs:domain cccev:Person ;
     rdfs:range skos:Concept ;
     rdfs:subClassOf skos:Concept ;
     owl:equivalentClass [ a owl:Restriction ;
@@ -159,7 +159,7 @@ cccev:gender a owl:Class ;
             owl:onProperty skos:inScheme ] .
 
 cccev:sex a owl:Class ;
-    rdfs:domain cccev:individual ;
+    rdfs:domain cccev:Person ;
     rdfs:range skos:Concept ;
     rdfs:subClassOf skos:Concept ;
     owl:equivalentClass [ a owl:Restriction ;

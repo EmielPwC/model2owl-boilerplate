@@ -135,55 +135,55 @@
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://purl.org/dc/terms/alternative">
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#birthName">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#birthName">
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/birthDate">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/birthDate">
       <rdfs:range rdf:resource="http://data.europa.eu/m8g/GenericDate"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/deathDate">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/deathDate">
       <rdfs:range rdf:resource="http://data.europa.eu/m8g/GenericDate"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/familyName">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/familyName">
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/name">
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/givenName">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://xmlns.com/foaf/0.1/givenName">
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/matronymicName">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/matronymicName">
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/patronymicName">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/patronymicName">
       <rdfs:range rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
@@ -228,7 +228,7 @@
       <rdfs:domain rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/identifies">
-      <rdfs:range rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:range rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/adms#identifier">
       <rdfs:domain rdf:resource="http://data.europa.eu/m8g/PublicOrganisation"/>
@@ -237,22 +237,22 @@
       <rdfs:range rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://purl.org/dc/terms/identifier">
       <rdfs:range rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/domicile">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/domicile">
       <rdfs:range rdf:resource="http://www.w3.org/ns/locn#Address"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/sex">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#placeOfDeath">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#placeOfDeath">
       <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
@@ -261,7 +261,7 @@
       <rdfs:domain>
          <owl:Class>
             <owl:unionOf rdf:parseType="Collection">
-               <rdf:Description rdf:about="http://data.europa.eu/m8g/individual"/>
+               <rdf:Description rdf:about="http://data.europa.eu/m8g/Person"/>
                <rdf:Description rdf:about="http://data.europa.eu/m8g/PublicOrganisation"/>
             </owl:unionOf>
          </owl:Class>
@@ -271,34 +271,34 @@
       <rdfs:range rdf:resource="http://data.europa.eu/m8g/ContactPoint"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#citizenship">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#citizenship">
       <rdfs:range rdf:resource="http://purl.org/dc/terms/Jurisdiction"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#placeOfBirth">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#placeOfBirth">
       <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/gender">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#residency">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#residency">
       <rdfs:range rdf:resource="http://purl.org/dc/terms/Jurisdiction"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#countryOfBirth">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#countryOfBirth">
       <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#countryOfDeath">
-      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <rdfs:domain rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://www.w3.org/ns/person#countryOfDeath">
       <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>

@@ -75,16 +75,16 @@
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/adms-Identifier">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:targetClass rdf:resource="http://data.europa.eu/m8g/individual"/>
+   <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:targetClass rdf:resource="http://data.europa.eu/m8g/Person"/>
    </sh:NodeShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <rdfs:label>Individual</rdfs:label>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <rdfs:label>Person</rdfs:label>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <rdfs:comment>A individual human being who may be dead or alive, but not imaginary.</rdfs:comment>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <rdfs:comment>A individual human being who may be dead or alive, but not imaginary. &amp;lt;a href= github.com&amp;gt; github &amp;lt;a&amp;gt;</rdfs:comment>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
    <sh:NodeShape rdf:about="http://data.europa.eu/m8g/data-shape/cv-ContactPoint">
@@ -225,157 +225,157 @@
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/adms-Identifier-dct-conformsTo">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-alternative"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-alternative"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-alternative">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-alternative">
       <sh:path rdf:resource="http://purl.org/dc/terms/alternative"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-alternative">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-alternative">
       <sh:name>Alternative</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-alternative">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-alternative">
       <sh:description>Any name by which a Person is known, other than their full name.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-alternative">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-alternative">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-alternative">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-alternative">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-person-birthName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-person-birthName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-birthName">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-birthName">
       <sh:path rdf:resource="http://www.w3.org/ns/person#birthName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-birthName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-birthName">
       <sh:name>Birth name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-birthName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-birthName">
       <sh:description>Full name of the Person given upon their birth.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-birthName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-birthName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-birthName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-birthName">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-birthDate"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-birthDate"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-birthDate">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-birthDate">
       <sh:path rdf:resource="http://data.europa.eu/m8g/birthDate"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-birthDate">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-birthDate">
       <sh:name>Birth date</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-birthDate">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-birthDate">
       <sh:description>The point in time on which the Person was born.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-birthDate">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-birthDate">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-deathDate"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-deathDate"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-deathDate">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-deathDate">
       <sh:path rdf:resource="http://data.europa.eu/m8g/deathDate"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-deathDate">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-deathDate">
       <sh:name>Death date</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-deathDate">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-deathDate">
       <sh:description>The point in time on which the Person died.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-deathDate">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-deathDate">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-familyName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-familyName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-familyName">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-familyName">
       <sh:path rdf:resource="http://xmlns.com/foaf/0.1/familyName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-familyName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-familyName">
       <sh:name>Family name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-familyName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-familyName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-familyName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-familyName">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-name"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-name"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-name">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-name">
       <sh:path rdf:resource="http://xmlns.com/foaf/0.1/name"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-name">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-name">
       <sh:name>Name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-name">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-name">
       <sh:description>The complete name of the Person as one string.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-name">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-name">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-name">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-name">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-givenName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-givenName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-givenName">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-givenName">
       <sh:path rdf:resource="http://xmlns.com/foaf/0.1/givenName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-givenName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-givenName">
       <sh:name>Given name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-givenName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-givenName">
       <sh:description>The name(s) that identify the Person within a family with a common surname.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-givenName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-givenName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-foaf-givenName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-foaf-givenName">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-matronymicName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-matronymicName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-matronymicName">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-matronymicName">
       <sh:path rdf:resource="http://data.europa.eu/m8g/matronymicName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-matronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-matronymicName">
       <sh:name>Matronymic name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-matronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-matronymicName">
       <sh:description>Name based on the given name of the Person's mother.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-matronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-matronymicName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-matronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-matronymicName">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-patronymicName"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-patronymicName"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-patronymicName">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-patronymicName">
       <sh:path rdf:resource="http://data.europa.eu/m8g/patronymicName"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-patronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-patronymicName">
       <sh:name>Patronymic name</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-patronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-patronymicName">
       <sh:description>Name based on the given name of the Person's father.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-patronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-patronymicName">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-shape"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-patronymicName">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-patronymicName">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cv-ContactPoint">
@@ -507,7 +507,7 @@
       <sh:description>The reference in the form of a Uniform Resource Identifier to the issuing authority.</sh:description>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/adms-Identifier-cpv-identifies">
-      <sh:class rdf:resource="http://data.europa.eu/m8g/individual"/>
+      <sh:class rdf:resource="http://data.europa.eu/m8g/Person"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/adms-Identifier-cpv-identifies">
       <sh:sparql rdf:parseType="Resource">
@@ -526,84 +526,84 @@
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/adms-Identifier-cpv-identifies">
       <sh:description>The entity that is referenced by the Identifier.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-identifier">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-identifier">
       <sh:class rdf:resource="http://www.w3.org/ns/adms#Identifier"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-identifier">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-identifier">
       <sh:sparql rdf:parseType="Resource">
          <sh:select>SELECT ?this ?that WHERE { ?this &lt;http://purl.org/dc/terms/identifier&gt; ?that . ?that &lt;http://purl.org/dc/terms/identifier&gt; ?this .}</sh:select>
       </sh:sparql>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-identifier"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-identifier"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-identifier">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-identifier">
       <sh:path rdf:resource="http://purl.org/dc/terms/identifier"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-identifier">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-identifier">
       <sh:name>Identifier</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-dct-identifier">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-dct-identifier">
       <sh:description>The unambiguous structured reference to the Person.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-contactPoint">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-contactPoint">
       <sh:class rdf:resource="http://data.europa.eu/m8g/ContactPoint"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-contactPoint">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-contactPoint">
       <sh:sparql rdf:parseType="Resource">
          <sh:select>SELECT ?this ?that WHERE { ?this &lt;http://data.europa.eu/m8g/contactPoint&gt; ?that . ?that &lt;http://data.europa.eu/m8g/contactPoint&gt; ?this .}</sh:select>
       </sh:sparql>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-contactPoint"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-contactPoint"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-contactPoint">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-contactPoint">
       <sh:path rdf:resource="http://data.europa.eu/m8g/contactPoint"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-contactPoint">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-contactPoint">
       <sh:name>Contact point</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-contactPoint">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-contactPoint">
       <sh:description>The main contact information of the resource.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-citizenship">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-citizenship">
       <sh:class rdf:resource="http://purl.org/dc/terms/Jurisdiction"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-citizenship">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-citizenship">
       <sh:sparql rdf:parseType="Resource">
          <sh:select>SELECT ?this ?that WHERE { ?this &lt;http://www.w3.org/ns/person#citizenship&gt; ?that . ?that &lt;http://www.w3.org/ns/person#citizenship&gt; ?this .}</sh:select>
       </sh:sparql>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-person-citizenship"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-person-citizenship"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-citizenship">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-citizenship">
       <sh:path rdf:resource="http://www.w3.org/ns/person#citizenship"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-citizenship">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-citizenship">
       <sh:name>Citizenship</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-citizenship">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-citizenship">
       <sh:description>The Jurisdiction that has conferred citizenship rights on the Person such as the right to vote, to receive certain protection from the community or the issuance of a passport.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-residency">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-residency">
       <sh:class rdf:resource="http://purl.org/dc/terms/Jurisdiction"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-residency">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-residency">
       <sh:sparql rdf:parseType="Resource">
          <sh:select>SELECT ?this ?that WHERE { ?this &lt;http://www.w3.org/ns/person#residency&gt; ?that . ?that &lt;http://www.w3.org/ns/person#residency&gt; ?this .}</sh:select>
       </sh:sparql>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-person-residency"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-person-residency"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-residency">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-residency">
       <sh:path rdf:resource="http://www.w3.org/ns/person#residency"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-residency">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-residency">
       <sh:name>Residency</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-person-residency">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-person-residency">
       <sh:description>Jurisdiction where the Person has their dwelling.</sh:description>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/foaf-Agent-dct-type">
@@ -623,34 +623,34 @@
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/foaf-Agent-dct-type">
       <sh:name>Type</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-sex">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-sex">
       <sh:class rdf:resource="http://data.europa.eu/m8g/sex"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-sex"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-sex"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-sex">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-sex">
       <sh:path rdf:resource="http://data.europa.eu/m8g/sex"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-sex">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-sex">
       <sh:name>Sex</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-sex">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-sex">
       <sh:description>The organism's biological sex.</sh:description>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-gender">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-gender">
       <sh:class rdf:resource="http://data.europa.eu/m8g/gender"/>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-gender"/>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-gender"/>
    </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-gender">
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-gender">
       <sh:path rdf:resource="http://data.europa.eu/m8g/gender"/>
    </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-gender">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-gender">
       <sh:name>Gender</sh:name>
    </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-individual-cpv-gender">
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/cpv-Person-cpv-gender">
       <sh:description>The identities, expressions and societal roles of the Person.</sh:description>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/foaf-Agent-dct-type">
