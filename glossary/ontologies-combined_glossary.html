@@ -41,13 +41,37 @@
                </thead>
                <tbody>
                   <tr>
+                     <td>adms:Identifier</td>
+                     <td></td>
+                  </tr>
+                  <tr>
                      <td>clv:AdminUnit</td>
                      <td>A detailed administrative unit organized in a hierarchy.</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>dct:Jurisdiction</td>
+                     <td></td>
                   </tr>
                   <tr>
                      <td>dct:Location</td>
                      <td>An identifiable geographic place or named place.
                         </td>
+                  </tr>
+                  <tr>
+                     <td>foaf:Agent</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>foaf:Person</td>
+                     <td></td>
                   </tr>
                   <tr>
                      <td>locn:Address</td>
@@ -60,6 +84,10 @@
                   <tr>
                      <td>rdfs:Resource</td>
                      <td>Anything that can be described.</td>
+                  </tr>
+                  <tr>
+                     <td>skos:Concept</td>
+                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -74,6 +102,12 @@
                   </tr>
                </thead>
                <tbody>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>adms:schemeAgency</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
                   <tr>
                      <td>locn:Geometry</td>
                      <td>clv:coordinates</td>
@@ -99,6 +133,96 @@
                      <td>The geographic coordinate that specifies the east / west position of the Geometry
                         on the Earth's surface.</td>
                      <td>xsd:string [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:birthDate</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:deathDate</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:matronymicName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:patronymicName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td>cv:contactPage</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td>cv:email</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td>cv:telephone</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>dct:alternative</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>dct:conformsTo</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:Jurisdiction</td>
+                     <td>dct:identifier</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>dct:issued</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>foaf:Agent</td>
+                     <td>dct:title</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>foaf:familyName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>foaf:givenName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>foaf:name</td>
+                     <td></td>
+                     <td> [0..*]</td>
                   </tr>
                   <tr>
                      <td>locn:Geometry</td>
@@ -189,10 +313,28 @@
                      <td>rdf:langString [0..*]</td>
                   </tr>
                   <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>person:birthName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier<br>dct:Jurisdiction<br></td>
+                     <td>rdfs:label</td>
+                     <td> </td>
+                     <td> [0..*]<br> [0..*]<br></td>
+                  </tr>
+                  <tr>
                      <td>dct:Location</td>
                      <td>rdfs:seeAlso</td>
                      <td>A reference in the form of a Uniform Resource Identifier to the Location.</td>
                      <td>xsd:anyURI [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>skos:notation</td>
+                     <td></td>
+                     <td> [0..*]</td>
                   </tr>
                </tbody>
             </table>
@@ -232,6 +374,31 @@
                      <td>rdfs:Resource -&gt; locn:Address [0..*]</td>
                   </tr>
                   <tr>
+                     <td>cpv:contactPoint</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; cv:ContactPoint [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:identifies</td>
+                     <td></td>
+                     <td>adms:Identifier -&gt; cpv:Indicidual [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:creator</td>
+                     <td></td>
+                     <td>adms:Identifier -&gt; foaf:Agent [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:identifier</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; adms:Identifier [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:type</td>
+                     <td></td>
+                     <td>foaf:Agent -&gt; skos:Concept []</td>
+                  </tr>
+                  <tr>
                      <td>locn:address</td>
                      <td>Associates any Resource with the corresponding Address. The Address of a Public Organization.</td>
                      <td>rdfs:Resource -&gt; locn:Address [0..*]<br><br></td>
@@ -245,6 +412,16 @@
                      <td>locn:location</td>
                      <td>Associates any Resource with the corresponding Location.</td>
                      <td>rdfs:Resource -&gt; dct:Location [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>person:citizenship</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; dct:Jurisdiction [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>person:residency</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; dct:Jurisdiction [0..*]</td>
                   </tr>
                </tbody>
             </table>

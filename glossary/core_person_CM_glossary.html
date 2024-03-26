@@ -22,11 +22,257 @@
             </style>
       <title>Model glossary</title>
    </head>
-   <div class="alert alert-danger text-center"><i class="fa fa-times-circle error" style="font-size: 60px;"></i><h1 class="counter-skip">Wrong model version detected. </h1><br><p>Please make sure that the XMI file uses XMI version 2.5.1 and UML version 2.5.1.</p>
-      <p>The namespaces to check:</p>
-      <ul>
-         <li>xmi="http://www.omg.org/spec/XMI/20131001"</li>
-         <li>uml="http://www.omg.org/spec/UML/20131001"</li>
-      </ul>
-   </div>
+   <body>
+      <main class="container-fluid">
+         <div id="toc" class="tocify">
+            <div class="text-center">
+               <p><strong>Table of contents</strong></p>
+            </div>
+         </div>
+         <div class="container">
+            <h1 xmlns:f="http://https://github.com/costezki/model2owl#">Glossary</h1>
+            <h2 xmlns:f="http://https://github.com/costezki/model2owl#">Class names and definitions</h2>
+            <table xmlns:f="http://https://github.com/costezki/model2owl#" class="display">
+               <thead class="center aligned">
+                  <tr>
+                     <th>Class name</th>
+                     <th>Definition</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>dct:Jurisdiction</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>foaf:Agent</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>foaf:Person</td>
+                     <td></td>
+                  </tr>
+                  <tr>
+                     <td>skos:Concept</td>
+                     <td></td>
+                  </tr>
+               </tbody>
+            </table>
+            <h2 xmlns:f="http://https://github.com/costezki/model2owl#">Attributes (datatype properties) names and definitions</h2>
+            <table xmlns:f="http://https://github.com/costezki/model2owl#" class="display">
+               <thead class="center aligned">
+                  <tr>
+                     <th>Class name</th>
+                     <th>Attribute name</th>
+                     <th>Definition</th>
+                     <th>Data type / cardinality</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>adms:schemeAgency</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:birthDate</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:deathDate</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:matronymicName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>cpv:patronymicName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td>cv:contactPage</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td>cv:email</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cv:ContactPoint</td>
+                     <td>cv:telephone</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>dct:alternative</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>dct:conformsTo</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:Jurisdiction</td>
+                     <td>dct:identifier</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>dct:issued</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>foaf:Agent</td>
+                     <td>dct:title</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>foaf:familyName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>foaf:givenName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>foaf:name</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:Indicidual</td>
+                     <td>person:birthName</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier<br>dct:Jurisdiction<br></td>
+                     <td>rdfs:label</td>
+                     <td> </td>
+                     <td> [0..*]<br> [0..*]<br></td>
+                  </tr>
+                  <tr>
+                     <td>adms:Identifier</td>
+                     <td>skos:notation</td>
+                     <td></td>
+                     <td> [0..*]</td>
+                  </tr>
+               </tbody>
+            </table>
+            <h2 xmlns:f="http://https://github.com/costezki/model2owl#">Predicates (object properties) and definitions</h2>
+            <table xmlns:f="http://https://github.com/costezki/model2owl#" class="display">
+               <thead class="center aligned">
+                  <tr>
+                     <th>Predicate name</th>
+                     <th>Definition</th>
+                     <th>Domain, Range and Cardinality</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td>cpv:contactPoint</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; cv:ContactPoint [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>cpv:identifies</td>
+                     <td></td>
+                     <td>adms:Identifier -&gt; cpv:Indicidual [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:creator</td>
+                     <td></td>
+                     <td>adms:Identifier -&gt; foaf:Agent [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:identifier</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; adms:Identifier [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>dct:type</td>
+                     <td></td>
+                     <td>foaf:Agent -&gt; skos:Concept []</td>
+                  </tr>
+                  <tr>
+                     <td>person:citizenship</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; dct:Jurisdiction [0..*]</td>
+                  </tr>
+                  <tr>
+                     <td>person:residency</td>
+                     <td></td>
+                     <td>cpv:Indicidual -&gt; dct:Jurisdiction [0..*]</td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </main>
+      <footer class="text-center"><br><br><p> This document is generated automatically by the <a href="https://github.com/costezki/model2owl" target="_blank">model2owl tool</a>
+            developed in the context of <a href="https://joinup.ec.europa.eu/solution/eprocurement-ontology">the
+               eProcurement Ontology initiative</a>.</p>
+         <p>The template of this report is based on the <a href="https://github.com/thomaspark/pubcss">PubCSS library</a>.</p>
+         <p>© Publications Office of the European Union, 2023</p>
+      </footer><script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><script src="static/js/jquery-3.4.1.min.js"></script><script src="static/js/jquery-ui.min.js"></script><script src="static/js/bootstrap.min.js"></script><script src="static/js/jquery.tocify.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.4/js/dataTables.buttons.min.js"></script><script type="text/javascript" src="https://cdn.datatables.net/buttons/1.6.4/js/buttons.print.min.js"></script><script>
+            $(function () {
+            //Calls the tocify method on your HTML div.
+            $("#toc").tocify({
+            selectors: "h2",
+            theme: "bootstrap",
+            hashGenerator: "pretty",
+            ignoreSelector: ".skip-toc"
+            });
+            });
+            
+        </script><script>
+            $(document).ready(function () {
+            
+            $("table.display").DataTable({
+            buttons: [],
+            "lengthMenu": [[-1], ["All"]],
+            responsive: {
+            details: true
+            }
+            });
+            
+            });
+        </script></body>
 </html>
