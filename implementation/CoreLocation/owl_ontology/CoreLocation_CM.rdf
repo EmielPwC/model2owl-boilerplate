@@ -119,16 +119,6 @@
    <rdf:Description rdf:about="http://data.europa.eu/m8g/adminUnit">
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/clv"/>
    </rdf:Description>
-   <owl:ObjectProperty rdf:about="http://data.europa.eu/m8g/domicile"/>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/domicile">
-      <skos:prefLabel xml:lang="en">Domicile</skos:prefLabel>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/domicile">
-      <skos:definition xml:lang="en">The place that the Person treats as permanent home. (cpv:Person -&gt; locn:Address (+cpv:domicile))</skos:definition>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/domicile">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/clv"/>
-   </rdf:Description>
    <owl:ObjectProperty rdf:about="http://data.europa.eu/m8g/registeredAddress"/>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/registeredAddress">
       <skos:prefLabel xml:lang="en">Registered address</skos:prefLabel>

@@ -124,6 +124,24 @@
       <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/clv-shape"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
+      <sh:path rdf:resource="http://www.w3.org/ns/locn#geographicName"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
+      <sh:name>Geographic name</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
+      <sh:description>A textual description for a Location.</sh:description>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/clv-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
+      <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location">
       <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/dct-Location-rdfs-seeAlso"/>
    </rdf:Description>
    <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-rdfs-seeAlso">
@@ -140,24 +158,6 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-rdfs-seeAlso">
       <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
-      <sh:path rdf:resource="http://www.w3.org/ns/locn#geographicName"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
-      <sh:name>Geographic name</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
-      <sh:description>A tewtual description for a Location.</sh:description>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/clv-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/dct-Location-locn-geographicName">
-      <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address">
       <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Address-locn-addressArea"/>
@@ -280,6 +280,21 @@
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
+      <sh:path rdf:resource="http://www.w3.org/ns/locn#poBox"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
+      <sh:name>Po box</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
+      <sh:description>A location designator for a postal delivery point at a post office, usually a number.</sh:description>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/clv-shape"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address">
       <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Address-locn-postCode"/>
    </rdf:Description>
    <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-postCode">
@@ -311,21 +326,6 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-postName">
       <sh:datatype rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
-      <sh:path rdf:resource="http://www.w3.org/ns/locn#poBox"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
-      <sh:name>Po box</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
-      <sh:description>A location designator for a postal delivery point at a post office, usually a number.</sh:description>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address-locn-poBox">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/clv-shape"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Address">
       <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Address-locn-thoroughfare"/>
@@ -382,21 +382,6 @@
       <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry">
-      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML"/>
-   </rdf:Description>
-   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
-      <sh:path rdf:resource="http://www.opengis.net/ont/geosparql#asGML"/>
-   </sh:PropertyShape>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
-      <sh:name>As g m l</sh:name>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
-      <sh:description>The expression of the Geometry in Geography Markup Language.</sh:description>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
-      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/clv-shape"/>
-   </rdf:Description>
-   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry">
       <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Geometry-clv-latitude"/>
    </rdf:Description>
    <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-clv-latitude">
@@ -431,6 +416,21 @@
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-clv-longitude">
       <sh:datatype rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry">
+      <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML"/>
+   </rdf:Description>
+   <sh:PropertyShape rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
+      <sh:path rdf:resource="http://www.opengis.net/ont/geosparql#asGML"/>
+   </sh:PropertyShape>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
+      <sh:name>As g m l</sh:name>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
+      <sh:description>The expression of the Geometry in Geography Markup Language.</sh:description>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asGML">
+      <rdfs:isDefinedBy rdf:resource="http://data.europa.eu/m8g/data-shape/clv-shape"/>
    </rdf:Description>
    <rdf:Description rdf:about="http://data.europa.eu/m8g/data-shape/locn-Geometry">
       <sh:property rdf:resource="http://data.europa.eu/m8g/data-shape/locn-Geometry-geosparql-asWKT"/>

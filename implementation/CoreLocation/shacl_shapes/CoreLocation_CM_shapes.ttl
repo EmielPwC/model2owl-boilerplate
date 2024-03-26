@@ -85,7 +85,7 @@ clv-shape:clv-AdminUnit-clv-level a sh:PropertyShape ;
 clv-shape:dct-Location-locn-geographicName a sh:PropertyShape ;
     rdfs:isDefinedBy clv-shape:clv-shape ;
     sh:datatype rdf:langString ;
-    sh:description "A tewtual description for a Location." ;
+    sh:description "A textual description for a Location." ;
     sh:name "Geographic name" ;
     sh:path locn:geographicName .
 

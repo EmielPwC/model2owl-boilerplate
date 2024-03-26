@@ -6,7 +6,6 @@
 @prefix locn: <http://www.w3.org/ns/locn#> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix person: <http://www.w3.org/ns/person#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -55,9 +54,6 @@ cccev:coordinates rdfs:domain locn:Geometry ;
 cccev:crs rdfs:domain locn:Geometry ;
     rdfs:range xsd:anyURI .
 
-cccev:domicile rdfs:domain cccev:Person ;
-    rdfs:range locn:Address .
-
 cccev:latitude rdfs:domain locn:Geometry ;
     rdfs:range xsd:string .
 
@@ -76,8 +72,7 @@ geo:asWKT rdfs:domain locn:Geometry ;
 rdfs:seeAlso rdfs:domain dcterms:Location ;
     rdfs:range xsd:anyURI .
 
-locn:address rdfs:domain [ a owl:Class ;
-            owl:unionOf ( rdfs:Resource cccev:PublicOrganisation ) ] ;
+locn:address rdfs:domain rdfs:Resource ;
     rdfs:range locn:Address .
 
 locn:addressArea rdfs:domain locn:Address ;
@@ -121,18 +116,6 @@ locn:postName rdfs:domain locn:Address ;
 
 locn:thoroughfare rdfs:domain locn:Address ;
     rdfs:range rdf:langString .
-
-person:countryOfBirth rdfs:domain cccev:Person ;
-    rdfs:range dcterms:Location .
-
-person:countryOfDeath rdfs:domain cccev:Person ;
-    rdfs:range dcterms:Location .
-
-person:placeOfBirth rdfs:domain cccev:Person ;
-    rdfs:range dcterms:Location .
-
-person:placeOfDeath rdfs:domain cccev:Person ;
-    rdfs:range dcterms:Location .
 
 cccev:code a owl:Class ;
     rdfs:domain cccev:AdminUnit ;
