@@ -5,6 +5,7 @@ on:
       - "**"
     paths:
       - "implementation/CoreLocation/xmi_conceptual_model/CoreLocation_CM.xml"
+      - "implementation/core_person/xmi_conceptual_model/core_person_CM.xml"
 jobs:
   report_and_glossary:
     runs-on: ubuntu-latest
@@ -26,7 +27,7 @@ jobs:
 
       - name: generate convention report and glossary
         run: |
-          AVAILABLE_IMPLEMENTATIONS=(CoreLocation)
+          AVAILABLE_IMPLEMENTATIONS=(CoreLocation core_person)
           for implementation in "${AVAILABLE_IMPLEMENTATIONS[@]}"
           do
             echo "-------------------${implementation}---------------------------------"
@@ -59,7 +60,7 @@ jobs:
 
       - name: merge implementations xmi files into one
         run: |
-          AVAILABLE_IMPLEMENTATIONS=(CoreLocation)
+          AVAILABLE_IMPLEMENTATIONS=(CoreLocation core_person)
           cd model2owl
           mkdir -p merge-xmis
           for implementation in "${AVAILABLE_IMPLEMENTATIONS[@]}"
@@ -128,7 +129,7 @@ jobs:
 
       - name: transform step
         run: |
-          AVAILABLE_IMPLEMENTATIONS=(CoreLocation)
+          AVAILABLE_IMPLEMENTATIONS=(CoreLocation core_person)
           for implementation in "${AVAILABLE_IMPLEMENTATIONS[@]}"
           do
             echo "-------------------${implementation} transform---------------------------------"
