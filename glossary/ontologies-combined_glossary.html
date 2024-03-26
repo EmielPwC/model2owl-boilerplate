@@ -41,38 +41,13 @@
                </thead>
                <tbody>
                   <tr>
-                     <td>adms:Identifier</td>
-                     <td>A structured reference that identifies an entity.</td>
-                  </tr>
-                  <tr>
                      <td>clv:AdminUnit</td>
                      <td>A detailed administrative unit organized in a hierarchy.</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>A individual human being who may be dead or alive, but not imaginary.</td>
-                  </tr>
-                  <tr>
-                     <td>cv:ContactPoint</td>
-                     <td>Information (e.g. e-mail address, telephone number) of a person or department through
-                        which the user can get in touch with.</td>
-                  </tr>
-                  <tr>
-                     <td>dct:Jurisdiction</td>
-                     <td>The limits or territory within which authority may be exercised.</td>
                   </tr>
                   <tr>
                      <td>dct:Location</td>
                      <td>An identifiable geographic place or named place.
                         </td>
-                  </tr>
-                  <tr>
-                     <td>foaf:Agent</td>
-                     <td>Entity that is able to carry out action.</td>
-                  </tr>
-                  <tr>
-                     <td>foaf:Person</td>
-                     <td></td>
                   </tr>
                   <tr>
                      <td>locn:Address</td>
@@ -85,10 +60,6 @@
                   <tr>
                      <td>rdfs:Resource</td>
                      <td>Anything that can be described.</td>
-                  </tr>
-                  <tr>
-                     <td>skos:Concept</td>
-                     <td></td>
                   </tr>
                </tbody>
             </table>
@@ -103,12 +74,6 @@
                   </tr>
                </thead>
                <tbody>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>adms:schemeAgency</td>
-                     <td>The name of the agency responsible for issuing the Identifier.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
                   <tr>
                      <td>locn:Geometry</td>
                      <td>clv:coordinates</td>
@@ -134,96 +99,6 @@
                      <td>The geographic coordinate that specifies the east / west position of the Geometry
                         on the Earth's surface.</td>
                      <td>xsd:string [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>cpv:birthDate</td>
-                     <td>The point in time on which the Person was born.</td>
-                     <td>cpv:GenericDate [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>cpv:deathDate</td>
-                     <td>The point in time on which the Person died.</td>
-                     <td>cpv:GenericDate [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>cpv:matronymicName</td>
-                     <td>Name based on the given name of the Person's mother.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>cpv:patronymicName</td>
-                     <td>Name based on the given name of the Person's father.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cv:ContactPoint</td>
-                     <td>cv:contactPage</td>
-                     <td>A web page that could be used to reach out the Contact Point.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cv:ContactPoint</td>
-                     <td>cv:email</td>
-                     <td>An electronic address through which the Contact Point can be contacted.</td>
-                     <td>rdfs:Literal [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cv:ContactPoint</td>
-                     <td>cv:telephone</td>
-                     <td>A telephone number through which the Contact Point can be contacted.</td>
-                     <td>rdfs:Literal [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>dct:alternative</td>
-                     <td>Any name by which a Person is known, other than their full name.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>dct:conformsTo</td>
-                     <td></td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>dct:Jurisdiction</td>
-                     <td>dct:identifier</td>
-                     <td>A reference in the form of a Uniform Resource Identifier to the Jurisdiction.</td>
-                     <td>xsd:anyURI [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>dct:issued</td>
-                     <td>The date on which the Identifier was assigned.</td>
-                     <td>xsd:date [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>foaf:Agent</td>
-                     <td>dct:title</td>
-                     <td>The noun given to the Agent.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>foaf:familyName</td>
-                     <td></td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>foaf:givenName</td>
-                     <td>The name(s) that identify the Person within a family with a common surname.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:Person</td>
-                     <td>foaf:name</td>
-                     <td>The complete name of the Person as one string.</td>
-                     <td>rdf:langString [0..*]</td>
                   </tr>
                   <tr>
                      <td>locn:Geometry</td>
@@ -314,28 +189,10 @@
                      <td>rdf:langString [0..*]</td>
                   </tr>
                   <tr>
-                     <td>cpv:Person</td>
-                     <td>person:birthName</td>
-                     <td>Full name of the Person given upon their birth.</td>
-                     <td>rdf:langString [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier<br>dct:Jurisdiction<br></td>
-                     <td>rdfs:label</td>
-                     <td> A string of characters that represents a Jurisdiction.</td>
-                     <td>rdf:langString [0..*]<br>rdf:langString [0..*]<br></td>
-                  </tr>
-                  <tr>
                      <td>dct:Location</td>
                      <td>rdfs:seeAlso</td>
                      <td>A reference in the form of a Uniform Resource Identifier to the Location.</td>
                      <td>xsd:anyURI [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>adms:Identifier</td>
-                     <td>skos:notation</td>
-                     <td>A string of characters to uniquely identify a concept.</td>
-                     <td>rdfs:Literal [0..*]</td>
                   </tr>
                </tbody>
             </table>
@@ -375,46 +232,6 @@
                      <td>rdfs:Resource -&gt; locn:Address [0..*]</td>
                   </tr>
                   <tr>
-                     <td>cpv:contactPoint</td>
-                     <td>The main contact information of the resource.  The main contact information of the resource.</td>
-                     <td>cpv:Person -&gt; cv:ContactPoint [0..*]<br><br></td>
-                  </tr>
-                  <tr>
-                     <td>cpv:domicile</td>
-                     <td>The place that the Person treats as permanent home. The place that the Person treats as permanent home.</td>
-                     <td>cpv:Person -&gt; locn:Address [0..*]<br>cpv:Person -&gt; locn:Address [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>cpv:gender</td>
-                     <td>The identities, expressions and societal roles of the Person.</td>
-                     <td>cpv:Person -&gt; cpv:gender [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:identifies</td>
-                     <td>The entity that is referenced by the Identifier.</td>
-                     <td>adms:Identifier -&gt; cpv:Person [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>cpv:sex</td>
-                     <td>The organism's biological sex.</td>
-                     <td>cpv:Person -&gt; cpv:sex [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>dct:creator</td>
-                     <td>The reference in the form of a Uniform Resource Identifier to the issuing authority.</td>
-                     <td>adms:Identifier -&gt; foaf:Agent [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>dct:identifier</td>
-                     <td>The unambiguous structured reference to the Person.</td>
-                     <td>cpv:Person -&gt; adms:Identifier [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>dct:type</td>
-                     <td> A classification assigned to an Agent.</td>
-                     <td>foaf:Agent -&gt; skos:Concept []<br>foaf:Agent -&gt; cpv:type [0..*]<br></td>
-                  </tr>
-                  <tr>
                      <td>locn:address</td>
                      <td>Associates any Resource with the corresponding Address. The Address of a Public Organization.</td>
                      <td>rdfs:Resource -&gt; locn:Address [0..*]<br><br></td>
@@ -428,37 +245,6 @@
                      <td>locn:location</td>
                      <td>Associates any Resource with the corresponding Location.</td>
                      <td>rdfs:Resource -&gt; dct:Location [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>person:citizenship</td>
-                     <td>The Jurisdiction that has conferred citizenship rights on the Person such as the right
-                        to vote, to receive certain protection from the community or the issuance of a passport.</td>
-                     <td>cpv:Person -&gt; dct:Jurisdiction [0..*]</td>
-                  </tr>
-                  <tr>
-                     <td>person:countryOfBirth</td>
-                     <td>The country in which the Person was born. The country in which the Person was born.</td>
-                     <td>cpv:Person -&gt; dct:Location [0..*]<br>cpv:Person -&gt; dct:Location [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>person:countryOfDeath</td>
-                     <td>The country in which the Person died. The country in which the Person died.</td>
-                     <td>cpv:Person -&gt; dct:Location [0..*]<br>cpv:Person -&gt; dct:Location [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>person:placeOfBirth</td>
-                     <td>The Location where the Person was born. The Location where the Person was born.</td>
-                     <td>cpv:Person -&gt; dct:Location [0..*]<br>cpv:Person -&gt; dct:Location [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>person:placeOfDeath</td>
-                     <td>The Location where the Person died. The Location where the Person died.</td>
-                     <td>cpv:Person -&gt; dct:Location [0..*]<br>cpv:Person -&gt; dct:Location [0..*]<br></td>
-                  </tr>
-                  <tr>
-                     <td>person:residency</td>
-                     <td>Jurisdiction where the Person has their dwelling.</td>
-                     <td>cpv:Person -&gt; dct:Jurisdiction [0..*]</td>
                   </tr>
                </tbody>
             </table>
