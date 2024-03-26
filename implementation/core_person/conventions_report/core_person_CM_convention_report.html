@@ -56,13 +56,13 @@
                   Generalisations</em>. Each major section lists model items that need correction of errors
                or consideration of warnings.</p>
             <p>The UML model in file <em>core_person_CM.xml</em> 
-               was tested at 08:51 on March 26, 2024.</p>
+               was tested at 08:58 on March 26, 2024.</p>
          </div>
          <h1 xmlns:f="http://https://github.com/costezki/model2owl#" id="nomenclature">Nomenclature</h1>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="classNames">Class names</h2>
          <ul xmlns:f="http://https://github.com/costezki/model2owl#" class="display-in-two-columns">
             <li><a href="#adms:Identifier">adms:Identifier</a></li>
-            <li><a href="#cpv:Indicidual">cpv:Indicidual</a></li>
+            <li><a href="#cpv:individual">cpv:individual</a></li>
             <li><a href="#cv:ContactPoint">cv:ContactPoint</a></li>
             <li><a href="#dct:Jurisdiction">dct:Jurisdiction</a></li>
             <li><a href="#foaf:Agent">foaf:Agent</a></li>
@@ -89,209 +89,81 @@
             <li><a href="#attribute-foaf:name">foaf:name</a></li>
             <li><a href="#attribute-person:birthName">person:birthName</a></li>
             <li><a href="#attribute-rdfs:label-usage">rdfs:label (2)</a><ul><em>
-                     <li>adms:Identifier () [0..*]</li>
-                     <li>dct:Jurisdiction () [0..*]</li></em></ul>
+                     <li>adms:Identifier (rdf:langString) [0..*]</li>
+                     <li>dct:Jurisdiction (rdf:langString) [0..*]</li></em></ul>
             </li>
             <li><a href="#attribute-skos:notation">skos:notation</a></li>
          </ul>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="connectorNames">Connector names</h2>
          <ul xmlns:f="http://https://github.com/costezki/model2owl#">
-            <li>cpv:contactPoint</li>
+            <li>adms:identifier</li>
+            <li>cpov:openingHours</li>
+            <li>cpov:specialOpeningHoursSpecification</li>
+            <li><a href="#connector-cpv:contactPoint">cpv:contactPoint (2)</a><ul><em>
+                     <li>cpv:individual -&gt; cv:ContactPoint [0..*]</li>
+                     <li> -&gt; cv:ContactPoint [0..*]</li></em></ul>
+            </li>
+            <li>cpv:domicile</li>
+            <li>cpv:gender</li>
             <li>cpv:identifies</li>
+            <li>cpv:sex</li>
             <li>dct:creator</li>
             <li>dct:identifier</li>
-            <li>dct:type</li>
+            <li><a href="#connector-dct:type">dct:type (2)</a><ul><em>
+                     <li>foaf:Agent -&gt; skos:Concept []</li>
+                     <li>foaf:Agent -&gt; cpv:type [0..*]</li></em></ul>
+            </li>
             <li>person:citizenship</li>
+            <li>person:countryOfBirth</li>
+            <li>person:countryOfDeath</li>
+            <li>person:placeOfBirth</li>
+            <li>person:placeOfDeath</li>
             <li>person:residency</li>
          </ul>
          <h1 class="selector-heading" id="classes">Classes</h1>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="adms:Identifier">adms:Identifier</h2>
          <section xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dl>
-               <dt>Unmet class conventions</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>adms:Identifier is missing a description. All concepts should be defined or described.</dd>
-            </dl>
-            <dl id="attribute-adms:schemeAgency">
-               <dt>adms:schemeAgency</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>adms:schemeAgency is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
+            <dl id="attribute-rdfs:label">
+               <dt>rdfs:label</dt>
+               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>rdfs:label is missing a description. All concepts should be defined or described.</dd>
             </dl>
             <dl id="attribute-dct:conformsTo">
                <dt>dct:conformsTo</dt>
                <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>dct:conformsTo is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-dct:issued">
-               <dt>dct:issued</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>dct:issued is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-rdfs:label">
-               <dt>rdfs:label</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>rdfs:label is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-skos:notation">
-               <dt>skos:notation</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>skos:notation is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
             </dl>
          </section>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="cpv:Indicidual">cpv:Indicidual</h2>
+         <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="cpv:individual">cpv:individual</h2>
          <section xmlns:f="http://https://github.com/costezki/model2owl#">
             <dl>
                <dt>Unmet class conventions</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:Indicidual is missing a description. All concepts should be defined or described.</dd>
+               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The class name cpv:individual is invalid. The class name must start with a capital
+                  case.</dd>
             </dl>
             <dl id="attribute-cpv:birthDate">
                <dt>cpv:birthDate</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:birthDate is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
+               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type cpv:GenericDate type is invalid. Attributes must use types that
+                  are either: (a) XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs
+                  (datatypes or classes).</dd>
             </dl>
             <dl id="attribute-cpv:deathDate">
                <dt>cpv:deathDate</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:deathDate is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-cpv:matronymicName">
-               <dt>cpv:matronymicName</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:matronymicName is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-cpv:patronymicName">
-               <dt>cpv:patronymicName</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:patronymicName is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-dct:alternative">
-               <dt>dct:alternative</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>dct:alternative is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter infos"><i class="fa fa-info-circle info"></i>The skos_prefLabel stareotype is applied to dct:alternative. Stereotypes are discouraged
-                  in the current practice with some exceptions. </dd>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The skos_prefLabel stareotype applied to dct:alternativeis not known and will be ignored.
-                  </dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The tag __EAStereoName of element dct:alternative must be an URI.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The tag skos_prefLabel of element dct:alternative must be an URI.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The prefix for __EAStereoName is not defined. A prefix must be associated to a namespace
-                  URI.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The prefix for skos_prefLabel is not defined. A prefix must be associated to a namespace
-                  URI.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
+               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type cpv:GenericDate type is invalid. Attributes must use types that
+                  are either: (a) XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs
+                  (datatypes or classes).</dd>
             </dl>
             <dl id="attribute-foaf:familyName">
                <dt>foaf:familyName</dt>
                <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>foaf:familyName is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-foaf:givenName">
-               <dt>foaf:givenName</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>foaf:givenName is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-foaf:name">
-               <dt>foaf:name</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>foaf:name is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-person:birthName">
-               <dt>person:birthName</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>person:birthName is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-         </section>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="cv:ContactPoint">cv:ContactPoint</h2>
-         <section xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dl>
-               <dt>Unmet class conventions</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cv:ContactPoint is missing a description. All concepts should be defined or described.</dd>
-            </dl>
-            <dl id="attribute-cv:contactPage">
-               <dt>cv:contactPage</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cv:contactPage is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-cv:email">
-               <dt>cv:email</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cv:email is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-cv:telephone">
-               <dt>cv:telephone</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cv:telephone is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
             </dl>
          </section>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="dct:Jurisdiction">dct:Jurisdiction</h2>
          <section xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dl>
-               <dt>Unmet class conventions</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>dct:Jurisdiction is missing a description. All concepts should be defined or described.</dd>
-            </dl>
             <dl id="attribute-dct:identifier">
                <dt>dct:identifier</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>dct:identifier is missing a description. All concepts should be defined or described.</dd>
                <dd class="filter errors"><i class="fa fa-times-circle error"></i>The name dct:identifier is not unique. The Concept names should be unique within the
                   model. The following specifies the names of the which things are not to be reused
                   as the names of which other things: attributes -&gt; elements, connector roles (dependency
                   and association)</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-            <dl id="attribute-rdfs:label">
-               <dt>rdfs:label</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>rdfs:label is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
-            </dl>
-         </section>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="foaf:Agent">foaf:Agent</h2>
-         <section xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dl>
-               <dt>Unmet class conventions</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>foaf:Agent is missing a description. All concepts should be defined or described.</dd>
-            </dl>
-            <dl id="attribute-dct:title">
-               <dt>dct:title</dt>
-               <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>dct:title is missing a description. All concepts should be defined or described.</dd>
-               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The attribute type  type is invalid. Attributes must use types that are either: (a)
-                  XSD or RDF datatypes or (b) belonging to a shortlist of custom URIs (datatypes or
-                  classes).</dd>
             </dl>
          </section>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#" id="foaf:Person">foaf:Person</h2>
@@ -316,6 +188,10 @@
             <dl>
                <dt>Unmet enumeration conventions</dt>
                <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:gender is missing a description. All concepts should be defined or described.</dd>
+               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The name cpv:gender is not unique. The Concept names should be unique within the model.
+                  The following specifies the names of the which things are not to be reused as the
+                  names of which other things: elements (Class, Datatype, Enumeration, Object) -&gt; elements,
+                  attributes, connector roles (dependency and association)</dd>
             </dl>
          </section>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:sex</h2>
@@ -323,6 +199,10 @@
             <dl>
                <dt>Unmet enumeration conventions</dt>
                <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:sex is missing a description. All concepts should be defined or described.</dd>
+               <dd class="filter errors"><i class="fa fa-times-circle error"></i>The name cpv:sex is not unique. The Concept names should be unique within the model.
+                  The following specifies the names of the which things are not to be reused as the
+                  names of which other things: elements (Class, Datatype, Enumeration, Object) -&gt; elements,
+                  attributes, connector roles (dependency and association)</dd>
             </dl>
          </section>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:type</h2>
@@ -338,17 +218,16 @@
             <dt>
                Unmet data-type conventions
                </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>cpv:GenericDate is missing a description. All concepts should be defined or described.</dd>
             <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The datatypecpv:GenericDateis not an XSD or RDF datatype.  It is recommended to use
                XSD and RDF datatypes mainly.</dd>
          </dl>
          <h1 class="selector-heading" id="packages">Packages</h1>
          <h1 class="selector-heading" id="object">Object</h1>
          <h1 class="selector-heading" id="generalizations">Generalizations</h1>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:Indicidual -&gt; foaf:Person (+)</h2>
+         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:individual -&gt; foaf:Person (+)</h2>
          <dl xmlns:f="http://https://github.com/costezki/model2owl#">
             <dt> Unmet generalisation conventions </dt>
-            <dd class="filter infos"><i class="fa fa-info-circle info"></i>The class foaf:Person has only one sub-class cpv:Indicidual. Class inheritance should
+            <dd class="filter infos"><i class="fa fa-info-circle info"></i>The class foaf:Person has only one sub-class cpv:individual. Class inheritance should
                be built employing at least two subclasses for each class or not at all.</dd>
          </dl>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#">foaf:Person -&gt; foaf:Agent (+)</h2>
@@ -358,57 +237,15 @@
                be built employing at least two subclasses for each class or not at all.</dd>
          </dl>
          <h1 class="selector-heading" id="associations">Associations</h1>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">adms:Identifier -&gt; cpv:Indicidual (+cpv:identifies)</h2>
+         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:individual -&gt; adms:Identifier (+dct:identifier)</h2>
          <dl xmlns:f="http://https://github.com/costezki/model2owl#">
             <dt>
                Unmet association conventions
                </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
-         </dl>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">adms:Identifier -&gt; foaf:Agent (+dct:creator)</h2>
-         <dl xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dt>
-               Unmet association conventions
-               </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
-         </dl>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:Indicidual -&gt; adms:Identifier (+dct:identifier)</h2>
-         <dl xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dt>
-               Unmet association conventions
-               </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
             <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector target role name dct:identifier is not unique.The Connector role names
                can be reused within the model, but only as connector role names on the same type
                of connector.I.e. the  name of (dependecy and association) connector roles should
                not be reused as the name of elements  (Class, Datatype, Enumeration, Object) or attributes.</dd>
-         </dl>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:Indicidual -&gt; cv:ContactPoint (+cpv:contactPoint)</h2>
-         <dl xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dt>
-               Unmet association conventions
-               </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
-         </dl>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:Indicidual -&gt; dct:Jurisdiction (+person:citizenship)</h2>
-         <dl xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dt>
-               Unmet association conventions
-               </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
-         </dl>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:Indicidual -&gt; dct:Jurisdiction (+person:residency)</h2>
-         <dl xmlns:f="http://https://github.com/costezki/model2owl#">
-            <dt>
-               Unmet association conventions
-               </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
          </dl>
          <h2 xmlns:f="http://https://github.com/costezki/model2owl#">foaf:Agent -&gt; skos:Concept (+dct:type)</h2>
          <dl xmlns:f="http://https://github.com/costezki/model2owl#">
@@ -419,95 +256,78 @@
                define and describe all the relations.</dd>
             <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role of foaf:Agent -&gt; skos:Concept (+dct:type) has no multiplicity. Cardinality
                must be provided for each role.</dd>
+            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector source role name dct:type is not unique.The Connector role names can
+               be reused within the model, but only as connector role names on the same type of connector.
+               I.e. the  name of a dependecy role should not be reused as the name of association
+               role, and the name of association role should not be reused as the  name of a dependecy
+               role.</dd>
          </dl>
          <h1 class="selector-heading" id="dependencies">Dependencies</h1>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:Indicidual -&gt; cpv:sex (+)</h2>
+         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:individual -&gt; cpv:sex (+cpv:sex)</h2>
          <dl xmlns:f="http://https://github.com/costezki/model2owl#">
             <dt> Unmet dependency conventions </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  does not match the pattern. The name should respect the syntax
-               prefix:localSegment (similar to the XML QName).</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is missing a prefix. The name should comprise a prefix respecing
-               the syntax prefix:localSegment.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is missing a local segment. Please provide one respecing the
-               syntax prefix:localSegment.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The target role name  , is invalid. Please provide a short prefix name containing
-               only alphanumeric characters [a-zA-Z0-9]+.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is not defined. A prefix must be associated to a namespace URI.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The local name from target role name  , is invalid. Please provide a concise label
-               using alphanumeric characters [a-zA-Z0-9_\-\s]+, preferably in CamelCase, or possibly
-               with tokens delimited by single spaces.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The local name from target role name  starts with an invalid character. The local
-               segment must start with a letter or underscore.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector cpv:Indicidual -&gt; cpv:sex (+) has no target role. The connectors must
-               have target roles.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role of cpv:Indicidual -&gt; cpv:sex (+) has no multiplicity. Cardinality
-               must be provided for each role.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector direction and roles are out of sync. The connector direction and roles
-               are out of sync. When the connector direction is Source-&gt;Destination then only a target
-               role is expected, while for Bi-Directional direction source and a target roles are
-               expected.</dd>
+            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector target role name cpv:sex is not unique.The Connector role names can
+               be reused within the model, but only as connector role names on the same type of connector.I.e.
+               the  name of (dependecy and association) connector roles should not be reused as the
+               name of elements  (Class, Datatype, Enumeration, Object) or attributes.</dd>
          </dl>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:Indicidual -&gt; cpv:gender (+)</h2>
+         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">cpv:individual -&gt; cpv:gender (+cpv:gender)</h2>
          <dl xmlns:f="http://https://github.com/costezki/model2owl#">
             <dt> Unmet dependency conventions </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  does not match the pattern. The name should respect the syntax
-               prefix:localSegment (similar to the XML QName).</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is missing a prefix. The name should comprise a prefix respecing
-               the syntax prefix:localSegment.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is missing a local segment. Please provide one respecing the
-               syntax prefix:localSegment.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The target role name  , is invalid. Please provide a short prefix name containing
-               only alphanumeric characters [a-zA-Z0-9]+.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is not defined. A prefix must be associated to a namespace URI.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The local name from target role name  , is invalid. Please provide a concise label
-               using alphanumeric characters [a-zA-Z0-9_\-\s]+, preferably in CamelCase, or possibly
-               with tokens delimited by single spaces.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The local name from target role name  starts with an invalid character. The local
-               segment must start with a letter or underscore.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector cpv:Indicidual -&gt; cpv:gender (+) has no target role. The connectors
-               must have target roles.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role of cpv:Indicidual -&gt; cpv:gender (+) has no multiplicity. Cardinality
-               must be provided for each role.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector direction and roles are out of sync. The connector direction and roles
-               are out of sync. When the connector direction is Source-&gt;Destination then only a target
-               role is expected, while for Bi-Directional direction source and a target roles are
-               expected.</dd>
+            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector target role name cpv:gender is not unique.The Connector role names can
+               be reused within the model, but only as connector role names on the same type of connector.I.e.
+               the  name of (dependecy and association) connector roles should not be reused as the
+               name of elements  (Class, Datatype, Enumeration, Object) or attributes.</dd>
          </dl>
-         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">foaf:Agent -&gt; cpv:type (+)</h2>
+         <h2 xmlns:f="http://https://github.com/costezki/model2owl#">foaf:Agent -&gt; cpv:type (+dct:type)</h2>
          <dl xmlns:f="http://https://github.com/costezki/model2owl#">
             <dt> Unmet dependency conventions </dt>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  does not match the pattern. The name should respect the syntax
-               prefix:localSegment (similar to the XML QName).</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is missing a prefix. The name should comprise a prefix respecing
-               the syntax prefix:localSegment.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is missing a local segment. Please provide one respecing the
-               syntax prefix:localSegment.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The target role name  , is invalid. Please provide a short prefix name containing
-               only alphanumeric characters [a-zA-Z0-9]+.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role name  is not defined. A prefix must be associated to a namespace URI.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The local name from target role name  , is invalid. Please provide a concise label
-               using alphanumeric characters [a-zA-Z0-9_\-\s]+, preferably in CamelCase, or possibly
-               with tokens delimited by single spaces.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The local name from target role name  starts with an invalid character. The local
-               segment must start with a letter or underscore.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The connector is missing a description. It is recommended                      to
-               define and describe all the relations.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector foaf:Agent -&gt; cpv:type (+) has no target role. The connectors must have
-               target roles.</dd>
-            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The target role of foaf:Agent -&gt; cpv:type (+) has no multiplicity. Cardinality must
-               be provided for each role.</dd>
-            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector direction and roles are out of sync. The connector direction and roles
-               are out of sync. When the connector direction is Source-&gt;Destination then only a target
-               role is expected, while for Bi-Directional direction source and a target roles are
-               expected.</dd>
+            <dd class="filter errors"><i class="fa fa-times-circle error"></i>The connector source role name dct:type is not unique.The Connector role names can
+               be reused within the model, but only as connector role names on the same type of connector.
+               I.e. the  name of a dependecy role should not be reused as the name of association
+               role, and the name of association role should not be reused as the  name of a dependecy
+               role.</dd>
          </dl>
          <h1 class="selector-heading" id="realisations">Realisations</h1>
          <h1 xmlns:f="http://https://github.com/costezki/model2owl#" id="connectorsUsage">Connectors with multiple usages</h1>
+         <dl xmlns:f="http://https://github.com/costezki/model2owl#" id="connector-cpv:contactPoint">
+            <dt>cpv:contactPoint</dt>
+         </dl>
+         <dd xmlns:f="http://https://github.com/costezki/model2owl#" class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>When a property is reused in multiple contexts, the meaning given by the definition
+            is expected to be the same. In this case, multiple definitions are found: 
+            <ul>
+               <li>The main contact information of the resource.  (cpv:individual -&gt; cv:ContactPoint
+                  (+cpv:contactPoint)) </li>
+               <li>The main contact information of the resource. (cpov:PublicOrganisation -&gt; cv:ContactPoint
+                  (+cpv:contactPoint)) </li>
+            </ul>
+         </dd>
+         <dl xmlns:f="http://https://github.com/costezki/model2owl#" id="connector-dct:type">
+            <dt>dct:type</dt>
+         </dl>
+         <dd xmlns:f="http://https://github.com/costezki/model2owl#" class="filter infos"><i class="fa fa-info-circle info"></i>When a property is reused in multiple contexts, the multiplicity is expected to be
+            the same. Please check the nomenclature above for a summary.</dd>
+         <dd xmlns:f="http://https://github.com/costezki/model2owl#" class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>When a property is reused in multiple contexts, the meaning given by the definition
+            is expected to be the same. In this case, multiple definitions are found: 
+            <ul>
+               <li>... (foaf:Agent -&gt; skos:Concept (+dct:type)) </li>
+               <li>A classification assigned to an Agent. (foaf:Agent -&gt; cpv:type (+dct:type)) </li>
+            </ul>
+         </dd>
+         <dd xmlns:f="http://https://github.com/costezki/model2owl#" class="filter errors"><i class="fa fa-times-circle error"></i>The name dct:type appears on connectors of different types.  A name shall be reused
+            only on connectors of the same type.</dd>
          <h1 xmlns:f="http://https://github.com/costezki/model2owl#" id="classAttributesUsage">Class attributes with multiple usages</h1>
+         <dl xmlns:f="http://https://github.com/costezki/model2owl#" id="attribute-rdfs:label-usage">
+            <dt>rdfs:label</dt>
+            <dd class="filter warnings"><i class="fa fa-exclamation-triangle warning"></i>The attribute rdfs:label is defined differently in reuse contexts. When a property
+               is reused in multiple contexts, the meaning given by the definition is expected to
+               be the same.In this case, multiple definitions are found: 
+               <ul>
+                  <li>... (adms:Identifier) </li>
+                  <li>A string of characters that represents a Jurisdiction. (dct:Jurisdiction) </li>
+               </ul>
+            </dd>
+         </dl>
          <h1 xmlns:f="http://https://github.com/costezki/model2owl#" id="generalConventions">General conventions</h1>
       </main>
       <footer class="text-center"><br><br><p> This document is generated automatically by the <a href="https://github.com/costezki/model2owl" target="_blank">model2owl tool</a>
